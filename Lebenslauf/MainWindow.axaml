@@ -1,0 +1,359 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1240" d:DesignHeight="1748"
+        x:Class="Lebenslauf.MainWindow"
+        Width="1240"
+        Height="1748"
+        Title="Lebenslauf">
+    <Grid Margin="50"
+          RowDefinitions="50,*"
+          DoubleTapped="InputElement_OnDoubleTapped">
+        
+        <TextBlock Grid.Row="0"
+                   Text="Lebenslauf"
+                   FontSize="38"
+                   FontWeight="ExtraBold"
+                   TextAlignment="Center"/>
+        
+        <StackPanel Grid.Row="1"
+                    HorizontalAlignment="Stretch"
+                    Margin="100,50">
+            
+            <GroupBox Header="Persönliches"
+                      FontWeight="Bold"
+                      FontSize="24"
+                      HorizontalAlignment="Stretch"
+                      HorizontalContentAlignment="Center">
+                <StackPanel Orientation="Vertical"
+                            Margin="20"
+                            HorizontalAlignment="Center"
+                            Spacing="10">
+                    <Grid ColumnDefinitions="300,600"
+                          HorizontalAlignment="Stretch">
+                        <TextBlock Grid.Column="0"
+                                   FontWeight="Normal"
+                                   FontSize="20"
+                                   Text="Name:"/>
+                        <TextBlock Grid.Column="1"
+                                   TextAlignment="Left"
+                                   FontWeight="Normal"
+                                   FontSize="20"
+                                   Text="Benjamin Karginski"/>
+                    </Grid>
+                    <Separator HorizontalAlignment="Stretch"
+                               BorderBrush="Black"
+                               BorderThickness="1"
+                               Opacity="0.25"/>
+                    <Grid ColumnDefinitions="300,600"
+                          HorizontalAlignment="Stretch">
+                        <TextBlock Grid.Column="0"
+                                   FontWeight="Normal"
+                                   FontSize="20"
+                                   Text="E-Mail:"/>
+                        <TextBlock Grid.Column="1"
+                                   TextAlignment="Left"
+                                   FontWeight="Normal"
+                                   FontSize="20"
+                                   Text="Benjamin.S@Karginski.de"/>
+                    </Grid>
+                    <Separator HorizontalAlignment="Stretch"
+                               BorderBrush="Black"
+                               BorderThickness="1"
+                               Opacity="0.25"/>
+                    <Grid ColumnDefinitions="300,600"
+                          HorizontalAlignment="Stretch">
+                        <TextBlock Grid.Column="0"
+                                   FontWeight="Normal"
+                                   FontSize="20"
+                                   Text="Geburtsdatum:"/>
+                        <TextBlock Grid.Column="1"
+                                   TextAlignment="Left"
+                                   FontWeight="Normal"
+                                   FontSize="20"
+                                   Text="28.09.1998"/>
+                    </Grid>
+                </StackPanel>
+            </GroupBox>
+            
+            <Separator HorizontalAlignment="Stretch"
+                       BorderBrush="#441111AA"
+                       BorderThickness="1"/>
+            <Separator HorizontalAlignment="Stretch"
+                       VerticalAlignment="Center"
+                       Margin="5"/>
+            
+            <GroupBox Header="Berufserfahrungen"
+                      FontWeight="Bold"
+                      FontSize="24"
+                      HorizontalAlignment="Stretch"
+                      HorizontalContentAlignment="Center">
+                <StackPanel Orientation="Vertical"
+                            Margin="20"
+                            HorizontalAlignment="Center"
+                            Spacing="10">
+                    <Grid ColumnDefinitions="300,600"
+                          HorizontalAlignment="Stretch">
+                        <TextBlock Grid.Column="0"
+                                   FontWeight="Normal"
+                                   FontSize="20"
+                                   Text="21.10.2019 - 31.01.2023"/>
+                        <StackPanel Grid.Column="1">
+                            <TextBlock FontWeight="Normal"
+                                       FontSize="20"
+                                       Text="Ausbildung als Fachinformatiker für Anwendungsentwicklung"/>
+                            <TextBlock FontWeight="Normal"
+                                       FontSize="18"
+                                       Text="RTO GmbH, Hanauer Landstraße 439, 60314 Frankfurt am Main"/>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock FontStyle="Normal"
+                                           FontSize="15"
+                                           FontWeight="Normal" Text="- Überarbeiten eines Dialogs zun einbinden von Datenbankdaten"/>
+                                <TextBlock FontStyle="Normal"
+                                           FontSize="15"
+                                           FontWeight="Normal" Text="- Erstellen einer REST API für Formulardaten aus Datenbank"/>
+                                <TextBlock FontStyle="Normal"
+                                           FontSize="15"
+                                           FontWeight="Normal" Text="- Überarbeiten einer WPF App als Blazor (Server) App"/>
+                                <TextBlock FontStyle="Normal"
+                                           FontSize="15"
+                                           FontWeight="Normal" Text="- (Abschlussprojekt) Avalonia App zum erstellen von Ausbildungsplänen"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                    <Separator HorizontalAlignment="Stretch"
+                               BorderBrush="Black"
+                               BorderThickness="1"
+                               Opacity="0.25"/>
+                    <Grid ColumnDefinitions="300,600"
+                          HorizontalAlignment="Stretch">
+                        <TextBlock Grid.Column="0"
+                                   FontWeight="Normal"
+                                   FontSize="20"
+                                   Text="01.08.2017 - 16.06.2018"/>
+                        <StackPanel Grid.Column="1">
+                            <TextBlock FontWeight="Normal"
+                                       FontSize="20"
+                                       Text="Praktikum als Fachinformatiker für Systemintegration"/>
+                            <TextBlock FontWeight="Normal"
+                                       FontSize="18"
+                                       Text="Lagento GmbH, Mahrisch-Schöneberger-Str. 4, 34613 Schwalmstadt"/>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock FontStyle="Normal"
+                                           FontSize="15"
+                                           FontWeight="Normal" Text="- Kundensupport"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                    <Separator HorizontalAlignment="Stretch"
+                               BorderBrush="Black"
+                               BorderThickness="1"
+                               Opacity="0.25"/>
+                    <Grid ColumnDefinitions="300,600"
+                          HorizontalAlignment="Stretch">
+                        <TextBlock Grid.Column="0"
+                                   FontWeight="Normal"
+                                   FontSize="20"
+                                   Text="01.08.2016 - 23.06.2017"/>
+                        <StackPanel Grid.Column="1">
+                            <TextBlock FontWeight="Normal"
+                                       FontSize="20"
+                                       Text="Praktikum als Fachinformatiker für Systemintegration"/>
+                            <TextBlock FontWeight="Normal"
+                                       FontSize="18"
+                                       Text="IAV GmbH, Rockwellstr. 16, 38518 Gifhorn"/>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock FontStyle="Normal"
+                                           FontSize="15"
+                                           FontWeight="Normal" Text="- Interner IT-Support"/>
+                                <TextBlock FontStyle="Normal"
+                                           FontSize="15"
+                                           FontWeight="Normal" Text="- Deployment von Präsentationshardware"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                    <Separator HorizontalAlignment="Stretch"
+                               BorderBrush="Black"
+                               BorderThickness="1"
+                               Opacity="0.25"/>
+                    <Grid ColumnDefinitions="300,600"
+                          HorizontalAlignment="Stretch">
+                        <TextBlock Grid.Column="0"
+                                   FontWeight="Normal"
+                                   FontSize="20"
+                                   Text="15.09.2015 - 19.01.2016"/>
+                        <StackPanel Grid.Column="1">
+                            <TextBlock FontWeight="Normal"
+                                       FontSize="20"
+                                       Text="Praktikum als Fachinformatiker für Systemintegration"/>
+                            <TextBlock FontWeight="Normal"
+                                       FontSize="18"
+                                       Text="ITfM GmbH, Hessenallee 53a, 34613 Schwalmstadt"/>
+                        </StackPanel>
+                    </Grid>
+                    <Separator HorizontalAlignment="Stretch"
+                               BorderBrush="Black"
+                               BorderThickness="1"
+                               Opacity="0.25"/>
+                    <Grid ColumnDefinitions="300,600"
+                          HorizontalAlignment="Stretch">
+                        <TextBlock Grid.Column="0"
+                                   FontWeight="Normal"
+                                   FontSize="20"
+                                   Text="13.07.2015 - 23.07.2015"/>
+                        <StackPanel Grid.Column="1">
+                            <TextBlock FontWeight="Normal"
+                                       FontSize="20"
+                                       Text="Praktikum als Fachinformatiker für Systemintegration"/>
+                            <TextBlock FontWeight="Normal"
+                                       FontSize="18"
+                                       Text="ITfM GmbH, Hessenallee 53a, 34613 Schwalmstadt"/>
+                        </StackPanel>
+                    </Grid>
+                    <Separator HorizontalAlignment="Stretch"
+                               BorderBrush="Black"
+                               BorderThickness="1"
+                               Opacity="0.25"/>
+                    <Grid ColumnDefinitions="300,600"
+                          HorizontalAlignment="Stretch">
+                        <TextBlock Grid.Column="0"
+                                   FontWeight="Normal"
+                                   FontSize="20"
+                                   Text="03.11.2014 - 14.11.2014"/>
+                        <StackPanel Grid.Column="1">
+                            <TextBlock FontWeight="Normal"
+                                       FontSize="20"
+                                       Text="Praktikum as IT-System-Elektroniker"/>
+                            <TextBlock FontWeight="Normal"
+                                       FontSize="18"
+                                       Text="EDV Service Klein, Fritzlarer Str. 26A, 34537 Bad Wildungen"/>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+            </GroupBox>
+            
+            <Separator HorizontalAlignment="Stretch"
+                       BorderBrush="#44AA1111"
+                       BorderThickness="1"/>
+            <Separator HorizontalAlignment="Stretch"
+                       VerticalAlignment="Center"
+                       Margin="5"/>
+            
+            <GroupBox Header="Schulbildung"
+                      FontWeight="Bold"
+                      FontSize="24"
+                      HorizontalAlignment="Stretch"
+                      HorizontalContentAlignment="Center">
+                <StackPanel Orientation="Vertical"
+                            Margin="20"
+                            HorizontalAlignment="Center"
+                            Spacing="10">
+                    <Grid ColumnDefinitions="300,600"
+                          HorizontalAlignment="Stretch">
+                        <TextBlock Grid.Column="0"
+                                   FontWeight="Normal"
+                                   FontSize="20"
+                                   Text="01.08.2016 - 31.07.2019"/>
+                        <StackPanel Grid.Column="1">
+                            <TextBlock FontWeight="Normal"
+                                       FontSize="20"
+                                       Text="Fachhochschulreife"/>
+                            <TextBlock FontWeight="Normal"
+                                       FontSize="18"
+                                       Text="Berufsschulcampus Schwalmstadt, Fachoberschule"/>
+                            <TextBlock FontWeight="Normal"
+                                       FontSize="16"
+                                       Text="Fachrichtung: Informationselektronik"/>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+            </GroupBox>
+            
+            <Separator HorizontalAlignment="Stretch"
+                       VerticalAlignment="Center"
+                       BorderBrush="#4411AA11"
+                       BorderThickness="1"/>
+            <Separator HorizontalAlignment="Stretch"
+                       VerticalAlignment="Center"
+                       Margin="5"/>
+            
+            <GroupBox Header="Kentnisse"
+                      FontWeight="Bold"
+                      FontSize="24"
+                      HorizontalAlignment="Stretch"
+                      HorizontalContentAlignment="Center">
+                <StackPanel Orientation="Vertical"
+                            Margin="20"
+                            HorizontalAlignment="Center"
+                            Spacing="10">
+                    <Grid ColumnDefinitions="300,600"
+                          HorizontalAlignment="Stretch">
+                        <TextBlock Grid.Column="0"
+                                   FontWeight="Normal"
+                                   FontSize="20"
+                                   Text="IT, DV, Computer"/>
+                        <StackPanel Grid.Column="1">
+                            <TextBlock FontWeight="Normal"
+                                       FontSize="18"
+                                       Text="C#/.NET"/>
+                            <TextBlock FontWeight="Normal"
+                                       FontSize="18"
+                                       Text="WPF/Avalonia"/>
+                            <TextBlock FontWeight="Normal"
+                                       FontSize="18"
+                                       Text="ASP.NET"/>
+                            <TextBlock FontWeight="Normal"
+                                       FontSize="18"
+                                       Text="Razor/Blazor (Server und Client)"/>
+                            <TextBlock FontWeight="Normal"
+                                       FontSize="18"
+                                       Text="MSSQL/SQL Server"/>
+                            <TextBlock FontWeight="Normal"
+                                       FontSize="18"
+                                       Text="Git/TFS"/>
+                            <TextBlock FontWeight="Normal"
+                                       FontSize="18"
+                                       Text="JS/TS"/>
+                        </StackPanel>
+                    </Grid>
+                    
+                    <Separator HorizontalAlignment="Stretch"
+                               BorderBrush="Black"
+                               BorderThickness="1"
+                               Opacity="0.25"/>
+                    
+                    <Grid ColumnDefinitions="300,600"
+                          HorizontalAlignment="Stretch">
+                        <TextBlock Grid.Column="0"
+                                   FontWeight="Normal"
+                                   FontSize="20"
+                                   Text="Sprachkenntnisse"/>
+                        <StackPanel Grid.Column="1">
+                            <TextBlock FontWeight="Normal"
+                                       FontSize="20"
+                                       Text="Englisch"/>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+            </GroupBox>
+            
+            <Separator HorizontalAlignment="Stretch"
+                       VerticalAlignment="Center"
+                       BorderBrush="#44AAAA11"
+                       BorderThickness="1"/>
+            <Separator HorizontalAlignment="Stretch"
+                       VerticalAlignment="Center"
+                       Margin="5"/>
+            
+            <Separator Height="10"/>
+            <TextBlock Text="Offenbach am Main, 24.10.2022"
+                       TextAlignment="Right"/>
+            <Separator Height="60"/>
+            <TextBlock Text="Benjamin Karginski"
+                       TextAlignment="Right"/>
+            
+        </StackPanel>
+        
+    </Grid>
+</Window>
